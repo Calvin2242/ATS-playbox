@@ -1,2 +1,2 @@
-# ATS-playbox
-ATS but for own use (not affliated with any school)
+# Assignment-Tracking-System
+Assignment Tracking System is created (vibe-coded) by the request of a client to better keep track of student's submissions
