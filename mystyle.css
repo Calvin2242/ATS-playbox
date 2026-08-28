@@ -11,6 +11,10 @@
     --card-light: #ffffff;
     --bg-dark: #000000;
     --card-dark: #1c1c1e;
+    --button-light: #e5e5ea;
+    --button-dark: #3a3a3c;
+    --button-text-light: #000000;
+    --button-text-dark: #ffffff;
 }
 
 body {
@@ -58,7 +62,6 @@ section {
     background-color: var(--card-light);
     padding: 25px;
     margin: 20px 5%;
-    border-radius: 16px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
@@ -102,6 +105,8 @@ body.dark input, body.dark select {
    BUTTONS (Tactile Design)
 ========================= */
 button {
+    background-color: var(--button-light);
+    color: var(--button-text-light);
     font-weight: 600;
     padding: 14px 24px;
     border-radius: 12px;
@@ -113,6 +118,11 @@ button {
     align-items: center;
     justify-content: center;
     gap: 8px;
+}
+
+body.dark button {
+    background-color: var(--button-dark);
+    color: var(--button-text-dark);
 }
 
 button:active {
@@ -338,6 +348,42 @@ body.dark .checkbox-item:hover {
 .method-option input:focus-visible + .method-card {
     outline: 2px solid #d6a83b;
     outline-offset: 2px;
+}
+
+body.light .method-card {
+    background: var(--button-light);
+    border-color: #d1d1d6;
+}
+
+body.light .method-card:hover {
+    border-color: #8e8e93;
+    background: #d1d1d6;
+}
+
+body.light .method-card .method-text strong {
+    color: #000;
+}
+
+body.light .method-card .method-text small {
+    color: #6e6e73;
+}
+
+body.light .method-card .radio-indicator {
+    border-color: #8e8e93;
+}
+
+body.light .method-option input:checked + .method-card {
+    border-color: #b8860b;
+    background: #fff8dc;
+    box-shadow: 0 0 0 1px rgba(184, 134, 11, 0.15);
+}
+
+body.light .method-option input:checked + .method-card .radio-indicator {
+    border-color: #b8860b;
+}
+
+body.light .method-option input:checked + .method-card .radio-indicator::after {
+    background: #b8860b;
 }
 
 /* Mobile */
